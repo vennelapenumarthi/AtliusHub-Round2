@@ -5,4 +5,6 @@ document.getElementByID('registerForm').addEventListener('submit',function(event
         event.preventDefault();
         alert('Passwords doesnot match');
     }
+    event.preventDefault();
+    console.log('Profile form Submitted');
 });
