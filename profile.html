@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>User profile</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>User profile</h2>
+        <form id="profileForm" actions="/updateProfile" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+            </div>
+            <div class="form-group">
+                <label for="profileImage">Image:</label>
+                <input type="file" id="profileImage" name="profileImage" required>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <input type="text" id="bio" name="bio" required>
+            </div>
+            <button type="submit">Update Profile</button>
+        </form>
+    
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
