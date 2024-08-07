@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>TASK RABBIT</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>REGISTER</h2>
+        <form id="registerform" actions="/register" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="Password" name="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            </div>
+            <div class="form-group">
+                <label for="profileImage">Image:</label>
+                <input type="file" id="profileImage" name="profileImage" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <h2>Login</h2>
+        <form id="loginForm" actions="/login" method="POST">
+            <div class="form-group">
+                <label for="loginEmail">Mail Id:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+             </div>
+             <button type="submit">Sign in</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
